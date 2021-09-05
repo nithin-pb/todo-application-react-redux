@@ -1,0 +1,44 @@
+header {
+  box-shadow: 0 0 15px 2px #0000001f;
+  background: var(--clr-secondary);
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    ul {
+      display: flex;
+      gap: 8px;
+      list-style: none;
+
+      li {
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s;
+
+        &:hover {
+          transition: 0.3s;
+          box-shadow: 0 0 0 1px var(--clr-fnt-primary);
+        }
+
+        a {
+          display: block;
+          padding: 8px 16px;
+          cursor: pointer;
+          text-decoration: none;
+          color: var(--clr-fnt-primary);
+        }
+
+        .active{
+          background: var(--clr-primary);
+          border-radius: 4px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
