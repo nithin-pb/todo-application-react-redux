@@ -1,0 +1,122 @@
+.user-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  .user-container {
+    height: 400px;
+    width: 60%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-secondary);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .login-wrapper {
+    width: 400px;
+    height: 500px;
+    padding: 32px;
+    position: absolute;
+    right: 32px;
+    background: #5C5C5CFF;
+    box-shadow: 0 0 7px 1px #0000003d;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  .title {
+    position: absolute;
+    left: 8%;
+    text-align: left;
+    color: var(--clr-fnt-primary);
+    right: 472px;
+
+    .small-tag-line {
+      color: var(--clr-fnt-secondary);
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .login-container {
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--clr-fnt-primary);
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--clr-fnt-primary);
+    box-shadow: 0 0 1px 1px var(--clr-fnt-primary);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 4px;
+    text-transform: uppercase;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+
+    input {
+      --border-input: var(--clr-secondary);
+      padding: 16px;
+      font-size: 16px;
+      border-radius: 8px;
+      outline: none;
+      border: 1px solid var(--border-input);
+      background: var(--clr-primary);
+      color: var(--clr-fnt-primary);
+      transition: 0.3s;
+    }
+
+    input[type=submit] {
+      font-weight: 600;
+      background: #e0e0e0;
+      color: rgba(0, 0, 0, 0.87);
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:disabled {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .error {
+    --border-input: red;
+  }
+}
+
+
+.logout {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid var(--clr-secondary);
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    border-radius: 4px;
+    border: 1px solid var(--clr-fnt-secondary);
+  }
+}
